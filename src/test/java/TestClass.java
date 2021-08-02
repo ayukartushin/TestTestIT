@@ -22,10 +22,10 @@ public class TestClass {
     @Test
     public void GoogleTest(){
         WebDriverManager.firefoxdriver().setup();
-        //ChromeOptions chromeOptions = new ChromeOptions();
-        //chromeOptions.addArguments("--headless");
-        //driver = new ChromeDriver(chromeOptions);
-        driver = new FirefoxDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
+        driver = new ChromeDriver(chromeOptions);
+        //driver = new FirefoxDriver();
 
 
         driver.get("http://google.com/");
