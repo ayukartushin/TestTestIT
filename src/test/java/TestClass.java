@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestClass {
 
@@ -20,10 +21,11 @@ public class TestClass {
     
     @Test
     public void GoogleTest(){
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
-        driver = new ChromeDriver(chromeOptions);
+        WebDriverManager.firefoxdriver().setup();
+        //ChromeOptions chromeOptions = new ChromeOptions();
+        //chromeOptions.addArguments("--headless");
+        //driver = new ChromeDriver(chromeOptions);
+        driver = new FirefoxDriver();
 
 
         driver.get("http://google.com/");
