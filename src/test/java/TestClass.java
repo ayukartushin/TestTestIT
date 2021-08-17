@@ -8,7 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import ru.testit.annotations.DisplayName;
 import ru.testit.annotations.Step;
 import ru.testit.annotations.Title;
 import ru.testit.annotations.WorkItemId;
@@ -34,6 +34,7 @@ public class TestClass {
     @Test
     @WorkItemId("14")
     @Title("АТ.Поиск Отуса в гугл")
+    @DisplayName("AT.Google test")
     public void GoogleTest(){
         Step1();
         Step2();
